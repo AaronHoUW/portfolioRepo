@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: 'Libre Caslon Text', serif;
+}
+
+/* Main */ 
+
+.drs_ima1 {
+  max-width: 200px;
+  animation-name: offHoverRoate;
+  animation-duration: 1s;
+}
+
+.drs_ima1:hover {
+  animation-fill-mode: forwards;
+  animation-name: onHoverRoate;
+  animation-duration: 1s;
+  /* animation-delay: 0ms; */
+}
+
+@keyframes onHoverRoate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes offHoverRoate {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Navbar */
+
+.navbar {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0em;
+  background-color: F8F6F4;
+  overflow: hidden;
+}
+
+.navbar > h1 {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Libre Bodoni';
+  font-weight: bold;
+  font-size: 40px;
+  margin: -10px 0px 0px;
+  padding-left: 2rem;
+}
+
+.links {
+  text-decoration: none;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: none;
+  line-height: normal;
+  color: black;
+  padding-right: 2rem;
+}
