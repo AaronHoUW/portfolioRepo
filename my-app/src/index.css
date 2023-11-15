@@ -18,6 +18,18 @@ body {
   /* animation-delay: 0ms; */
 }
 
+.bannerImage {
+  object-fit: cover;
+  object-position: 0% 20%;
+  width: 100%;
+  height: 400px;
+}
+
+.banner {
+  /* width: 100vh; */
+  max-height: 400px;
+}
+
 @keyframes onHoverRoate {
   0% {
     transform: rotate(0deg);
