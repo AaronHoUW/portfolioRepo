@@ -1,17 +1,21 @@
 import React from "react";
 import { Link, NavLink } from 'react-router-dom';
-
+import {
+    NavBarContainer,
+    Links,
+    NavBarHeader
+} from './Navbar.tsx'
 
 function Navbar() {
     return (
-        <nav className="navbar">
-            <h1>Aaron Ho</h1>
+        <NavBarContainer>
+            <NavBarHeader>Aaron Ho</NavBarHeader>
             <NavLink style={{textDecoration: 'none', 'padding-top': '10px'}}>
-                <Link to="/" className="links" >Home</Link>
-                <Link to="/work" className="links">Work</Link>
-                <Link to="/about" className="links">About</Link>
+                <Links to="/">Home</Links>
+                <Links to="/work">Work</Links>
+                <Links to="/about">About</Links>
             </NavLink>
-        </nav>
+        </NavBarContainer>
     )
 }
 

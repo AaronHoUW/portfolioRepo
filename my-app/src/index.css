@@ -18,18 +18,6 @@ body {
   /* animation-delay: 0ms; */
 }
 
-.bannerImage {
-  object-fit: cover;
-  object-position: 0% 20%;
-  width: 100%;
-  height: 400px;
-}
-
-.banner {
-  /* width: 100vh; */
-  max-height: 400px;
-}
-
 @keyframes onHoverRoate {
   0% {
     transform: rotate(0deg);
@@ -46,38 +34,4 @@ body {
   100% {
     transform: rotate(0deg);
   }
-}
-
-/* Navbar */
-
-.navbar {
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem 0em;
-  background-color: F8F6F4;
-  overflow: hidden;
-}
-
-.navbar > h1 {
-  display: flex;
-  flex-direction: row;
-  font-family: 'Libre Bodoni';
-  font-weight: bold;
-  font-size: 40px;
-  margin: 0px;
-  padding-left: 2rem;
-}
-
-.links {
-  text-decoration: none;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: none;
-  line-height: normal;
-  color: black;
-  padding-right: 2rem;
 }
