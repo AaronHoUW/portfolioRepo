@@ -9,8 +9,9 @@ export const NavBarContainer = styled.nav`
     display: flex;
     justify-content: space-between;
     padding: 2rem 0em;
-    background-color: F8F6F4;
+    background-color: rgba(234, 234, 234, 0.5);
     overflow: hidden;
+    position: fixed;
 `;
 
 export const NavBarHeader = styled.h1`

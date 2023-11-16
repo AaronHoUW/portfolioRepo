@@ -6,9 +6,11 @@ body {
 /* Main */ 
 
 .drs_ima1 {
-  max-width: 200px;
+  /* max-width: 200px; */
+  width: fit-content;
   animation-name: offHoverRoate;
   animation-duration: 1s;
+  margin: auto;
 }
 
 .drs_ima1:hover {
