@@ -10,11 +10,11 @@ function Navbar() {
     return (
         <NavBarContainer>
             <NavBarHeader>Aaron Ho</NavBarHeader>
-            <NavLink style={{textDecoration: 'none', 'padding-top': '10px'}}>
+            <div style={{'paddingTop': '10px'}}>
                 <Links to="/">Home</Links>
                 <Links to="/work">Work</Links>
                 <Links to="/about">About</Links>
-            </NavLink>
+            </div>
         </NavBarContainer>
     )
 }

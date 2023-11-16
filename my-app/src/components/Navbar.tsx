@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
 
-export const NavBarContainer = styled.nav`
+export const NavBarContainer = styled.div`
     z-index: 1;
     top: 0;
     left: 0;

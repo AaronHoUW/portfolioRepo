@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import projectData from "../data/projects.json";
 import {
     ProjectContainer,
     ProjectInfo,
@@ -9,7 +10,7 @@ import {
 
 function Projects() {
     // const [projectCounter, setProjectCount] = useState(3);
-
+    console.log(projectData)
     const projectList = [...Array(3)].map((e, i) => <ProjectPage key={i}/>)
 
     return(
