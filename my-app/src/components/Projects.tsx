@@ -38,4 +38,10 @@ export const ProjectButton = styled.button`
     padding: 1rem;
     border: none;
     align-self: start;
-`
+`;
+
+export const ProjectButtonLink = styled.a`
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+`;
