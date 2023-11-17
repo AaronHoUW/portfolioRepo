@@ -68,3 +68,14 @@ body {
     transform: scale(1.1);
   }
 }
+
+.website_image {
+  animation-name: offHoverButton;
+  animation-duration: .3s;
+}
+
+.website_image:hover {
+  /* border: 5px solid #EAEAEA;; */
+  animation-fill-mode: forwards;
+  animation-name: onHoverButton;
+}

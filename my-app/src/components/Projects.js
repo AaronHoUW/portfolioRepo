@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import projectData from "../data/projects.json";
 import {
     ProjectContainer,
@@ -6,7 +6,8 @@ import {
     ProjectText,
     ProjectHeader,
     ProjectButton,
-    ProjectButtonLink
+    ProjectButtonLink,
+    ProjectImagePreview
 } from './Projects.tsx'
 
 function Projects() {
@@ -21,7 +22,8 @@ function Projects() {
 }
 
 export function ProjectPage(props) {
-    const data = projectData[props.title]
+    const data = projectData[props.title];
+    console.log(data);
     return(
         <ProjectContainer>
             <ProjectInfo>
@@ -32,7 +34,8 @@ export function ProjectPage(props) {
                     </div>
                     <ProjectButtonLink href={data.link} target="_blank" rel="noopener noreferrer"><ProjectButton className="website_button">View Project</ProjectButton></ProjectButtonLink>
                 </ProjectText>
-                <img src="https://remywiki.com/images/thumb/1/17/ROCK_THE_PARTY.png/400px-ROCK_THE_PARTY.png" alt="Rock The Party Jacket" className="drs_ima1" />
+                <ProjectImagePreview src={data.displayImage} alt={props.title + " Website Image"} className="website_image"/>
+                {/* <img src="https://remywiki.com/images/thumb/1/17/ROCK_THE_PARTY.png/400px-ROCK_THE_PARTY.png" alt="Rock The Party Jacket" className="drs_ima1" /> */}
             </ProjectInfo>
         </ProjectContainer>
     )

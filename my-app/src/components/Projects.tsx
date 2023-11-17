@@ -45,3 +45,8 @@ export const ProjectButtonLink = styled.a`
     text-decoration: none;
     color: white;
 `;
+
+export const ProjectImagePreview =  styled.img`
+    max-width: 500px;
+    margin: auto;
+`
