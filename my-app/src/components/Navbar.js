@@ -9,7 +9,7 @@ import {
 function Navbar() {
     return (
         <NavBarContainer>
-            <NavBarHeader>Aaron Ho</NavBarHeader>
+            <Links to="/"><NavBarHeader>Aaron Ho</NavBarHeader></Links>
             <div style={{'paddingTop': '10px'}}>
                 <Links to="/">Home</Links>
                 <Links to="/work">Work</Links>

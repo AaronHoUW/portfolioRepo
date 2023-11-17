@@ -49,4 +49,5 @@ export const ProjectButtonLink = styled.a`
 export const ProjectImagePreview =  styled.img`
     max-width: 500px;
     margin: auto;
+    padding: 0 1.5rem;
 `
