@@ -1,14 +1,14 @@
 {
     "Marine Rescue: The Sea-quel": {
         "link": "https://marine-rescue-seaquel.web.app/",
-        "displayImage": "./img/marine.jpg"
+        "displayImage": ["./img/marine.jpg", "./img/placeholder1.jpg", "./img/placeholder2.jpg", "./img/placeholder3.jpg"]
     },
     "Sleep&See": {
         "link": "https://info442-christmas.web.app/",
-        "displayImage": "./img/sleep.png"
+        "displayImage": ["./img/sleep.png", "./img/placeholder1.jpg", "./img/placeholder2.jpg", "./img/placeholder3.jpg"]
     },
     "Waves": {
         "link": "https://waves-app-info340.web.app/",
-        "displayImage": "./img/waves.jpg"
+        "displayImage": ["./img/waves.jpg", "./img/placeholder1.jpg", "./img/placeholder2.jpg", "./img/placeholder3.jpg"]
     }
 }

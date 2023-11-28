@@ -24,27 +24,30 @@ function Projects() {
 export function ProjectPage(props) {
     const data = projectData[props.title];
     const [hoverState, setHoverState] = useState(false);
+    const [displayImage, setDisplayImage] = useState(data.displayImage[0])
     const [count, setCount] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
+            if(count >= 3) {
+                setCount(0);
+            } else {
+                setCount(count + 1);
+            }
             if(hoverState) {
-                if(count >= 3) {
-                    setCount(0);
-                } else {
-                    setCount(count + 1);
-                }
                 console.log(count);
+                setDisplayImage(data.displayImage[count])
+            } else {
+                setDisplayImage(data.displayImage[0])
             }
         }, 1000);
-
         return () => clearInterval(interval)
     }, [count]);
 
     const onHover = async (e) => {
+        setCount(0);
         console.log(props.title + " is hovered")
         setHoverState(true);
-        setCount(0);
     }
 
     const onHoverLeave = (e) => {
@@ -65,7 +68,10 @@ export function ProjectPage(props) {
                 <ProjectImagePreview 
                     onMouseEnter={(e) => onHover(e)}
                     onMouseLeave={(e) => onHoverLeave(e)}
-                    src={data.displayImage}
+                    src={
+                        displayImage
+                        // data.displayImage[0]
+                    }
                     alt={props.title + " Website Image"}
                     className="website_image"
                 />

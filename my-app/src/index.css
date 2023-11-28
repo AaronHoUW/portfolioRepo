@@ -1,6 +1,13 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   font-family: 'Libre Caslon Text', serif;
+  height: 100%;
+  overflow: auto;
 }
 
 /* Main */ 
@@ -78,4 +85,25 @@ body {
   /* border: 5px solid #EAEAEA;; */
   animation-fill-mode: forwards;
   animation-name: onHoverButton;
+}
+
+.website_image_inf:hover {
+  animation-name: blend;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+@keyframes blend {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  80% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
