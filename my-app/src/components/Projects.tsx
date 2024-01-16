@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProjectContainer = styled.div`
     background-color: #EAEAEA;
     border-radius: 25px;
-    width: 75%;
+    width: fit-content;
     height: fit-content;
     margin: 25px auto 25px;
     padding: 10px;
@@ -12,7 +12,7 @@ export const ProjectContainer = styled.div`
 export const ProjectInfo = styled.div`
     justify-content: space-between;
     display: flex;
-    padding: 1.5rem 0;
+    padding: 1.5rem 1.5rem;
 `;
 
 export const ProjectText = styled.div`
@@ -47,7 +47,7 @@ export const ProjectButtonLink = styled.a`
 `;
 
 export const ProjectImagePreview =  styled.img`
-    max-width: 500px;
+    max-width: 1000px;
     margin: auto;
-    padding: 0 1.5rem;
+    padding: 0 0rem;
 `

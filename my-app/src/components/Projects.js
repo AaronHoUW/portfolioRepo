@@ -58,16 +58,16 @@ export function ProjectPage(props) {
     return(
         <ProjectContainer>
             <ProjectInfo>
-                <ProjectText>
+                {/* <ProjectText>
                     <div>
                         <ProjectHeader>{props.title}</ProjectHeader>
                         <p>Lorem ipsum dolor sit amet consectetur. Sed sem malesuada sed egestas nibh vitae purus. Dolor pharetra placerat vivamus faucibus nulla odio convallis aliquet urna. Suspendisse quis ridiculus et convallis purus. Sollicitudin sit etiam non montes diam sagittis mauris in.</p>
                     </div>
                     <ProjectButtonLink href={data.link} target="_blank" rel="noopener noreferrer"><ProjectButton className="website_button">View Project</ProjectButton></ProjectButtonLink>
-                </ProjectText>
+                </ProjectText> */}
                 <ProjectImagePreview 
-                    onMouseEnter={(e) => onHover(e)}
-                    onMouseLeave={(e) => onHoverLeave(e)}
+                    // onMouseEnter={(e) => onHover(e)}
+                    // onMouseLeave={(e) => onHoverLeave(e)}
                     src={
                         displayImage
                         // data.displayImage[0]
