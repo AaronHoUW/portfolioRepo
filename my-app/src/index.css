@@ -60,19 +60,23 @@ body {
 
 @keyframes offHoverButton {
   0% {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    filter: blur(3px);
   }
   100% {
     transform: scale(1.0);
+    filter: blur(0px);
   }
 }
 
 @keyframes onHoverButton {
   0% {
     transform: scale(1.0);
+    filter: blur(0px) opacity(1.0);
   }
   100% {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    filter: blur(3px) opacity(.7);
   }
 }
 
@@ -82,7 +86,6 @@ body {
 }
 
 .website_image:hover {
-  /* border: 5px solid #EAEAEA;; */
   animation-fill-mode: forwards;
   animation-name: onHoverButton;
 }

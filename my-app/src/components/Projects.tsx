@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ProjectContainer = styled.div`
     background-color: #EAEAEA;
-    border-radius: 25px;
+    border-radius: 10px;
     width: fit-content;
     height: fit-content;
     margin: 25px auto 25px;
@@ -11,8 +11,10 @@ export const ProjectContainer = styled.div`
 
 export const ProjectInfo = styled.div`
     justify-content: space-between;
-    display: flex;
-    padding: 1.5rem 1.5rem;
+    display: inline-block;
+    overflow: hidden;
+    background-color: #262227;
+    height: 525px;
 `;
 
 export const ProjectText = styled.div`
