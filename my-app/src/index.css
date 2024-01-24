@@ -27,24 +27,6 @@ body {
   /* animation-delay: 0ms; */
 }
 
-@keyframes onHoverRoate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
-}
-
-@keyframes offHoverRoate {
-  0% {
-    transform: rotate(-180deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
 /* Projects Cards */
 
 @keyframes onHoverText {

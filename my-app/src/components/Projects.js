@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import projectData from "../data/projects.json";
 import {
     ProjectContainer,
@@ -23,21 +23,10 @@ function Projects() {
 
 export function ProjectPage(props) {
     const data = projectData[props.title];
-    const [projectClass, setProjectClass] = useState("");
-
-    const onHover = async (e) => {
-        console.log(props.title + " is hovered")
-        setProjectClass("website_text")
-    }
-
-    const onHoverLeave = (e) => {
-        console.log(props.title + " is hovered is off")
-        setProjectClass("")
-    }
 
     return(
         <ProjectContainer>
-            <ProjectInfo onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverLeave(e)}>
+            <ProjectInfo>
                 <ProjectText className="website_text">
                     <div>
                         <ProjectHeader>{props.title}</ProjectHeader>
@@ -47,7 +36,7 @@ export function ProjectPage(props) {
                 </ProjectText>
                 <ProjectImagePreview 
                     src={
-                        data.displayImage[0]
+                        data.displayImage
                         // data.displayImage[0]
                     }
                     alt={props.title + " Website Image"}
