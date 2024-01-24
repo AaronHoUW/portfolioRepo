@@ -7,6 +7,8 @@ export const ProjectContainer = styled.div`
     height: fit-content;
     margin: 25px auto 25px;
     padding: 10px;
+    position: relative;
+    max-height: 525px
 `;
 
 export const ProjectInfo = styled.div`
@@ -18,12 +20,13 @@ export const ProjectInfo = styled.div`
 `;
 
 export const ProjectText = styled.div`
+    position: absolute;
     width: 50%;
     margin: 0px 2rem; 
     font-size: 20px;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
+    color: white;
 `
 
 export const ProjectHeader = styled.h2`

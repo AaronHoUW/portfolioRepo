@@ -23,53 +23,31 @@ function Projects() {
 
 export function ProjectPage(props) {
     const data = projectData[props.title];
-    const [hoverState, setHoverState] = useState(false);
-    const [displayImage, setDisplayImage] = useState(data.displayImage[0])
-    const [count, setCount] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            if(count >= 3) {
-                setCount(0);
-            } else {
-                setCount(count + 1);
-            }
-            if(hoverState) {
-                console.log(count);
-                setDisplayImage(data.displayImage[count])
-            } else {
-                setDisplayImage(data.displayImage[0])
-            }
-        }, 1000);
-        return () => clearInterval(interval)
-    }, [count]);
+    const [projectClass, setProjectClass] = useState("");
 
     const onHover = async (e) => {
-        setCount(0);
         console.log(props.title + " is hovered")
-        setHoverState(true);
+        setProjectClass("website_text")
     }
 
     const onHoverLeave = (e) => {
         console.log(props.title + " is hovered is off")
-        setHoverState(false)
+        setProjectClass("")
     }
 
     return(
         <ProjectContainer>
-            <ProjectInfo>
-                {/* <ProjectText>
+            <ProjectInfo onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverLeave(e)}>
+                <ProjectText className="website_text">
                     <div>
                         <ProjectHeader>{props.title}</ProjectHeader>
                         <p>Lorem ipsum dolor sit amet consectetur. Sed sem malesuada sed egestas nibh vitae purus. Dolor pharetra placerat vivamus faucibus nulla odio convallis aliquet urna. Suspendisse quis ridiculus et convallis purus. Sollicitudin sit etiam non montes diam sagittis mauris in.</p>
                     </div>
-                    <ProjectButtonLink href={data.link} target="_blank" rel="noopener noreferrer"><ProjectButton className="website_button">View Project</ProjectButton></ProjectButtonLink>
-                </ProjectText> */}
+                    {/* <ProjectButtonLink href={data.link} target="_blank" rel="noopener noreferrer"><ProjectButton className="website_button">View Project</ProjectButton></ProjectButtonLink> */}
+                </ProjectText>
                 <ProjectImagePreview 
-                    // onMouseEnter={(e) => onHover(e)}
-                    // onMouseLeave={(e) => onHoverLeave(e)}
                     src={
-                        displayImage
+                        data.displayImage[0]
                         // data.displayImage[0]
                     }
                     alt={props.title + " Website Image"}
