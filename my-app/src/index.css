@@ -50,18 +50,23 @@ body {
 @keyframes onHoverText {
   0% {
     filter: opacity(0);
+    transform: translateX(-250px);
+  
   }
   100% {
     filter: opacity(1);
+    transform: translateX(0px);
   }
 }
 
 @keyframes offHoverText {
   0% {
     filter: opacity(1);
+    transform: translateX(0px);
   }
   100% {
     filter: opacity(0);
+    transform: translateX(-250px);
   }
 }
 
