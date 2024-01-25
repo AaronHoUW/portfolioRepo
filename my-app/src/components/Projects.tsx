@@ -24,9 +24,8 @@ export const ProjectText = styled.div`
     width: 50%;
     margin: 0px 2rem; 
     font-size: 20px;
-    flex-direction: column;
-    justify-content: space-between;
     color: white;
+    // top: 25%
 `
 
 export const ProjectHeader = styled.h2`
@@ -55,4 +54,8 @@ export const ProjectImagePreview =  styled.img`
     max-width: 1000px;
     margin: auto;
     padding: 0 0rem;
+`
+
+export const ProjectList = styled.li`
+    padding: 0.5rem 0;
 `
