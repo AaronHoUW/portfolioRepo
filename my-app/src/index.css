@@ -58,6 +58,8 @@ div > .website_text > div{
   visibility: hidden;
   opacity: 0;
   transition: all 1s ease-out;
+  z-index: 0;
+  position: inherit;
 }
 
 div:hover > .website_text > div{
@@ -67,6 +69,7 @@ div:hover > .website_text > div{
   visibility: visible;
   opacity: 1;
   transition: all 1s ease-in;
+  z-index: 1;
 }
 
 @keyframes offHoverImage {

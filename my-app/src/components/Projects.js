@@ -1,3 +1,5 @@
+import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
+import { IconContext } from "react-icons";
 import React from "react";
 import TextEditor from "./TextEditor";
 import projectData from "../data/projects.json";
@@ -6,11 +8,13 @@ import {
     ProjectInfo,
     ProjectText,
     ProjectHeader,
-    ProjectButton,
-    ProjectButtonLink,
+    ProjectLink,
     ProjectImagePreview,
-    ProjectList
+    ProjectList,
+    ProjectListContainer,
+    ProjectIcons
 } from './Projects.tsx'
+import { Link } from "react-router-dom";
 
 function Projects() {
     const projectList = Object.keys(projectData).map((website, i) => <ProjectPage title={website} key={i}/>)
@@ -34,18 +38,23 @@ export function ProjectPage(props) {
             <ProjectInfo>
                 <ProjectText className="website_text">
                     <div>
-                        <ProjectHeader>{props.title}</ProjectHeader>
-                        <ul>
-                            {list}
-                        </ul>
+                        <Link to={data.link} target="_blank" style={{textDecoration: 'none', color: "white"}}>
+                            <ProjectHeader>{props.title}</ProjectHeader>
+                        </Link>
+                        <ProjectListContainer>{list}</ProjectListContainer>
+                        <ProjectIcons>
+                            <ProjectLink to={data.github} target="_blank" style={{textDecoration: 'none', color: "white"}}>
+                                <IconContext.Provider value={{ size: "2em" }}><AiFillGithub /></IconContext.Provider>
+                            </ProjectLink>
+                            <ProjectLink to={data.link} target="_blank" style={{textDecoration: 'none', color: "white"}}>
+                                <IconContext.Provider value={{ size: "2em" }}><AiOutlineLink /></IconContext.Provider>
+                            </ProjectLink>
+                        </ProjectIcons>                        
                     </div>
                     {/* <ProjectButtonLink href={data.link} target="_blank" rel="noopener noreferrer"><ProjectButton className="website_button">View Project</ProjectButton></ProjectButtonLink> */}
                 </ProjectText>
                 <ProjectImagePreview 
-                    src={
-                        data.displayImage
-                        // data.displayImage[0]
-                    }
+                    src={data.displayImage}
                     alt={props.title + " Website Image"}
                     className="website_image"
                 />

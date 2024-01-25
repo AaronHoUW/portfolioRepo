@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const ProjectContainer = styled.div`
     background-color: #EAEAEA;
@@ -25,7 +26,7 @@ export const ProjectText = styled.div`
     margin: 0px 2rem; 
     font-size: 20px;
     color: white;
-    // top: 25%
+    top: 10%
 `
 
 export const ProjectHeader = styled.h2`
@@ -33,21 +34,8 @@ export const ProjectHeader = styled.h2`
     font-weight: bold;
 `
 
-export const ProjectButton = styled.button`
-    background-color: #727188;
-    border-radius: 10px;
-    font-size: 20px;
-    color: #FFFFFF;
-    font-family: 'Libre Caslon Text';
-    padding: 1rem;
-    border: none;
-    align-self: start;
-`;
-
-export const ProjectButtonLink = styled.a`
-    width: fit-content;
-    text-decoration: none;
-    color: white;
+export const ProjectLink = styled(Link)`
+    margin-right: 1rem;
 `;
 
 export const ProjectImagePreview =  styled.img`
@@ -58,4 +46,12 @@ export const ProjectImagePreview =  styled.img`
 
 export const ProjectList = styled.li`
     padding: 0.5rem 0;
+`
+
+export const ProjectListContainer = styled.ul`
+    margin: 0
+`
+
+export const ProjectIcons = styled.div`
+    margin: 0.5rem 0 0 0.5rem
 `

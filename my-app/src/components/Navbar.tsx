@@ -21,7 +21,7 @@ export const NavBarHeader = styled.h1`
     font-weight: bold;
     font-size: 40px;
     margin: 0px;
-    padding-left: 2rem;
+    margin-left: 2rem;
 `;
 
 export const Links = styled(Link)`
@@ -31,5 +31,5 @@ export const Links = styled(Link)`
     font-weight: none;
     line-height: normal;
     color: black;
-    padding-right: 2rem;
+    margin-right: 2rem;
 `;
