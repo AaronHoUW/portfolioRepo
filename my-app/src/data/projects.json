@@ -9,14 +9,15 @@
     "Sleep&See": {
         "link": "https://info442-christmas.web.app/",
         "displayImage": "./img/sleep.png",
-        "description": ["Designed and developed an interactive web application using Javascript and React to educate kids about marine life",
-            "Lead the development process incorporating main features including quizzes, minigames, and storytelling",
-            "Overhauled the project scripts in Refactoring code's structure and debugging problems"]
+        "description": ["Incorporated, built, and published a web application for young adults to track their sleep using </u>JavaScript</p>, </u>React</p>, and </u>Firebase",
+            "</u>Organized</p> and </u>directed</p> each development phase from planning to launching the final product",
+            "Implemented a custom-built calendar where users can track and store their hours of sleep within a </u>backend"]
     },
     "Waves": {
         "link": "https://waves-app-info340.web.app/",
         "displayImage": "./img/waves.jpg",
-        "description": ["Designed and developed an interactive web application using Javascript and React to educate kids about marine life",
-            "Lead the development process incorporating main features including quizzes, minigames, and storytelling",
-            "Overhauled the project scripts in Refactoring code's structure and debugging problems"]   }
+        "description": ["Devised and created a music-sharing platform connecting music enthusiasts together using </u>Javascript</p> and </u>React</p>",
+            "</u>Integrated iTunes API</p> into the application in enchancing the user experiences in sharing music",
+            "</u>Facilitated</p> the development phrase by </u>troubleshooting</p> and resolving any problem that arose during the project's development"]
+    }
 }
