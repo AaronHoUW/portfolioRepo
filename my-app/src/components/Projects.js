@@ -51,7 +51,6 @@ export function ProjectPage(props) {
                             </ProjectLink>
                         </ProjectIcons>                        
                     </div>
-                    {/* <ProjectButtonLink href={data.link} target="_blank" rel="noopener noreferrer"><ProjectButton className="website_button">View Project</ProjectButton></ProjectButtonLink> */}
                 </ProjectText>
                 <ProjectImagePreview 
                     src={data.displayImage}

@@ -9,7 +9,7 @@
     },
     "Sleep&See": {
         "link": "https://info442-christmas.web.app/",
-        "github": "https://github.com/AaronHoUW/FlapJack",
+        "github": "https://github.com/UW-INFO442-WI23/christmas",
         "displayImage": "./img/sleep.png",
         "description": ["Incorporated, built, and published a web application for young adults to track their sleep using </u>JavaScript</p>, </u>React</p>, and </u>Firebase",
             "</u>Organized</p> and </u>directed</p> each development phase from planning to launching the final product",
@@ -17,7 +17,7 @@
     },
     "Waves": {
         "link": "https://waves-app-info340.web.app/",
-        "github": "https://github.com/AaronHoUW/FlapJack",
+        "github": "https://github.com/info340-au21/project-ungjus",
         "displayImage": "./img/waves.jpg",
         "description": ["Devised and created a music-sharing platform connecting music enthusiasts together using </u>Javascript</p> and </u>React</p>",
             "</u>Integrated iTunes API</p> into the application in enchancing the user experiences in sharing music",
