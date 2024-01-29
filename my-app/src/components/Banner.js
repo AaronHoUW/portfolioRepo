@@ -7,7 +7,7 @@ import {
 function Banner() {
     return (
         <BannerContainer>
-            <BannerImage src="/img/marygates.jpg" />
+            <BannerImage src="/img/Sunset-in-Seattle-1.jpg"/>
         </BannerContainer>
     ) 
 }

@@ -5,7 +5,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Libre Caslon Text', serif;
+  font-family: 'helvetica', serif;
   height: 100%;
   overflow: auto;
 }
@@ -57,7 +57,7 @@ div > .website_text > div{
   animation-duration: 1s;
   visibility: hidden;
   opacity: 0;
-  transition: all 1s ease-out;
+  transition: all .45s ease-out;
   z-index: 0;
   position: inherit;
 }
@@ -68,7 +68,7 @@ div:hover > .website_text > div{
   animation-duration: 1s;
   visibility: visible;
   opacity: 1;
-  transition: all 1s ease-in;
+  transition: all .45s ease-in;
   z-index: 1;
 }
 
@@ -96,11 +96,11 @@ div:hover > .website_text > div{
 
 div > .website_image {
   animation-name: offHoverImage;
-  animation-duration: 1s;
+  animation-duration: .45s;
 }
 
 div:hover > .website_image {
   animation-fill-mode: forwards;
   animation-name: onHoverImage;
-  animation-duration: 1s;
+  animation-duration: .45s;
 }

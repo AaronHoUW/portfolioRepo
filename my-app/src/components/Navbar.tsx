@@ -8,7 +8,7 @@ export const NavBarContainer = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0em;
+    padding: 2.1rem 0em;
     background-color: rgba(234, 234, 234, 0.5);
     overflow: hidden;
     position: fixed;
@@ -17,7 +17,7 @@ export const NavBarContainer = styled.div`
 export const NavBarHeader = styled.h1`
     display: flex;
     flex-direction: row;
-    font-family: 'Libre Bodoni';
+    // font-family: 'Libre Bodoni';
     font-weight: bold;
     font-size: 40px;
     margin: 0px;

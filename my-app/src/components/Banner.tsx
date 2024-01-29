@@ -7,7 +7,7 @@ export const BannerContainer = styled.div`
 
 export const BannerImage = styled.img`
     object-fit: cover;
-    object-position: 0% 20%;
+    object-position: 0% 30%;
     width: 100%;
     height: 400px;
 `;
