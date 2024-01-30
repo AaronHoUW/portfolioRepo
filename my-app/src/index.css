@@ -29,43 +29,39 @@ body {
 
 /* Projects Cards */
 
-@keyframes onHoverText {
+@keyframes onHoverIcon {
   0% {
     filter: opacity(0);
-    transform: translateX(-250px);
   
   }
   100% {
     filter: opacity(1);
-    transform: translateX(0px);
   }
 }
 
-@keyframes offHoverText {
+@keyframes offHoverIcon {
   0% {
     filter: opacity(1);
-    transform: translateX(0px);
   }
   100% {
     filter: opacity(0);
-    transform: translateX(-250px);
   }
 }
 
-div > .website_text > div{
-  animation-name: offHoverText;
-  animation-duration: 1s;
+div > .website_image_hover {
+  animation-name: offHoverIcon;
+  animation-duration: .45s;
   visibility: hidden;
   opacity: 0;
   transition: all .45s ease-out;
   z-index: 0;
-  position: inherit;
+  position: absolute;
 }
 
-div:hover > .website_text > div{
-  animation-name: onHoverText;
+div:hover > .website_image_hover {
+  animation-name: onHoverIcon;
   animation-fill-mode: forwards;
-  animation-duration: 1s;
+  animation-duration: .45s;
   visibility: visible;
   opacity: 1;
   transition: all .45s ease-in;
@@ -74,23 +70,19 @@ div:hover > .website_text > div{
 
 @keyframes offHoverImage {
   0% {
-    transform: scale(1.05);
-    filter: blur(3px) opacity(.2);
+    filter: opacity(.3);
   }
   100% {
-    transform: scale(1.0);
-    filter: blur(0px) opacity(1.0);
+    filter: opacity(1.0);
   }
 }
 
 @keyframes onHoverImage {
   0% {
-    transform: scale(1.0);
-    filter: blur(0px) opacity(1.0);
+    filter: opacity(1.0);
   }
   100% {
-    transform: scale(1.05);
-    filter: blur(3px) opacity(.2);
+    filter: opacity(.3);
   }
 }
 

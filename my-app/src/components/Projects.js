@@ -1,4 +1,4 @@
-import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
+import { AiFillGithub, AiOutlineLink, AiOutlineExport } from "react-icons/ai";
 import { IconContext } from "react-icons";
 import React from "react";
 import TextEditor from "./TextEditor";
@@ -12,7 +12,8 @@ import {
     ProjectImagePreview,
     ProjectList,
     ProjectListContainer,
-    ProjectIcons
+    ProjectIcons,
+    ProjectImage
 } from './Projects.tsx'
 import { Link } from "react-router-dom";
 
@@ -36,27 +37,30 @@ export function ProjectPage(props) {
     return(
         <ProjectContainer>
             <ProjectInfo>
-                <ProjectText className="website_text">
-                    <div>
-                        <Link to={data.link} target="_blank" style={{textDecoration: 'none', color: "white"}}>
-                            <ProjectHeader>{props.title}</ProjectHeader>
-                        </Link>
-                        <ProjectListContainer>{list}</ProjectListContainer>
-                        <ProjectIcons>
-                            <ProjectLink to={data.github} target="_blank" style={{textDecoration: 'none', color: "white"}}>
-                                <IconContext.Provider value={{ size: "2em" }}><AiFillGithub /></IconContext.Provider>
-                            </ProjectLink>
-                            <ProjectLink to={data.link} target="_blank" style={{textDecoration: 'none', color: "white"}}>
-                                <IconContext.Provider value={{ size: "2em" }}><AiOutlineLink /></IconContext.Provider>
-                            </ProjectLink>
-                        </ProjectIcons>                        
-                    </div>
+                <ProjectText>
+                    <Link to={data.link} target="_blank" style={{textDecoration: 'none', color: "white"}}>
+                        <ProjectHeader>{props.title}</ProjectHeader>
+                    </Link>
+                    <ProjectListContainer>{list}</ProjectListContainer>
+                    <ProjectIcons>
+                        <ProjectLink to={data.github} target="_blank" style={{textDecoration: 'none', color: "white"}}>
+                            <IconContext.Provider value={{ size: "2em" }}><AiFillGithub /></IconContext.Provider>
+                        </ProjectLink>
+                        <ProjectLink to={data.link} target="_blank" style={{textDecoration: 'none', color: "white"}}>
+                            <IconContext.Provider value={{ size: "2em" }}><AiOutlineLink /></IconContext.Provider>
+                        </ProjectLink>
+                    </ProjectIcons>                        
                 </ProjectText>
-                <ProjectImagePreview 
-                    src={data.displayImage}
-                    alt={props.title + " Website Image"}
-                    className="website_image"
-                />
+                <ProjectImage onClick={() => document.getElementById(props.title).click()}>
+                    <ProjectLink id={props.title} className="website_image_hover" to={data.link} target="_blank" style={{textDecoration: 'none', color: "white"}}>
+                        <IconContext.Provider value={{ size: "10em" }}><AiOutlineExport /></IconContext.Provider>
+                    </ProjectLink>
+                    <ProjectImagePreview 
+                        src={data.displayImage}
+                        alt={props.title + " Website Image"}
+                        className="website_image"
+                    />
+                </ProjectImage>                
             </ProjectInfo>
         </ProjectContainer>
     )

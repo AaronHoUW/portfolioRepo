@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const ProjectContainer = styled.div`
     background-color: #EAEAEA;
     border-radius: 10px;
-    width: fit-content;
+    width: 1500px;
     height: fit-content;
     margin: 25px auto 25px;
     padding: 10px;
@@ -14,16 +14,16 @@ export const ProjectContainer = styled.div`
 
 export const ProjectInfo = styled.div`
     justify-content: space-between;
-    display: inline-block;
+    flex-direction-column;
+    display: flex;
     overflow: hidden;
     background-color: #262227;
     height: 525px;
 `;
 
 export const ProjectText = styled.div`
-    position: absolute;
     width: 50%;
-    margin: 0px 2rem; 
+    margin: 2rem 2rem; 
     font-size: 20px;
     color: white;
     top: 10%
@@ -54,4 +54,10 @@ export const ProjectListContainer = styled.ul`
 
 export const ProjectIcons = styled.div`
     margin: 0.5rem 0 0 0.5rem
+`
+
+export const ProjectImage = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
