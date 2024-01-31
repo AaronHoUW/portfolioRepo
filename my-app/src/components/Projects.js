@@ -15,11 +15,9 @@ import {
     ProjectIcons,
     ProjectImage
 } from './Projects.tsx'
-import { Link } from "react-router-dom";
 
 function Projects() {
     const projectList = Object.keys(projectData).map((website, i) => <ProjectPage title={website} key={i}/>)
-
     return(
         <>
             {projectList}
@@ -38,9 +36,7 @@ export function ProjectPage(props) {
         <ProjectContainer>
             <ProjectInfo>
                 <ProjectText>
-                    <Link to={data.link} target="_blank" style={{textDecoration: 'none', color: "white"}}>
-                        <ProjectHeader>{props.title}</ProjectHeader>
-                    </Link>
+                    <ProjectHeader>{props.title}</ProjectHeader>
                     <ProjectListContainer>{list}</ProjectListContainer>
                     <ProjectIcons>
                         <ProjectLink to={data.github} target="_blank" style={{textDecoration: 'none', color: "white"}}>
