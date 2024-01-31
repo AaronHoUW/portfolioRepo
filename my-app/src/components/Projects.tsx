@@ -32,6 +32,7 @@ export const ProjectText = styled.div`
 export const ProjectHeader = styled.h2`
     font-size: 28px;
     font-weight: bold;
+    margin-block-end: 0.5em;
 `
 
 export const ProjectLink = styled(Link)`
@@ -46,6 +47,7 @@ export const ProjectImagePreview =  styled.img`
 
 export const ProjectList = styled.li`
     padding: 0.5rem 0;
+    line-height: 1.3;
 `
 
 export const ProjectListContainer = styled.ul`
@@ -53,7 +55,9 @@ export const ProjectListContainer = styled.ul`
 `
 
 export const ProjectIcons = styled.div`
-    margin: 0.5rem 0 0 0.5rem
+    // margin: 0.5rem 0 0 0.5rem;
+    position: absolute;
+    bottom: 2rem;
 `
 
 export const ProjectImage = styled.div`

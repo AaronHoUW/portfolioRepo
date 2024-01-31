@@ -1,98 +1,116 @@
 html {
-  height: 100%;
-  overflow: hidden;
+    height: 100%;
+    overflow: hidden;
 }
 
 body {
-  margin: 0;
-  font-family: 'helvetica', serif;
-  height: 100%;
-  overflow: auto;
-}
-
-/* Main */ 
-
-.drs_ima1 {
-  /* max-width: 200px; */
-  width: fit-content;
-  animation-name: offHoverRoate;
-  animation-duration: 1s;
-  margin: auto;
-}
-
-.drs_ima1:hover {
-  animation-fill-mode: forwards;
-  animation-name: onHoverRoate;
-  animation-duration: 1s;
-  /* animation-delay: 0ms; */
+    margin: 0;
+    font-family: 'helvetica', serif;
+    height: 100%;
+    overflow: auto;
 }
 
 /* Projects Cards */
 
 @keyframes onHoverIcon {
-  0% {
-    filter: opacity(0);
-  
-  }
-  100% {
-    filter: opacity(1);
-  }
+    0% {
+        filter: opacity(0);
+
+    }
+
+    100% {
+        filter: opacity(1);
+    }
 }
 
 @keyframes offHoverIcon {
-  0% {
-    filter: opacity(1);
-  }
-  100% {
-    filter: opacity(0);
-  }
+    0% {
+        filter: opacity(1);
+    }
+
+    100% {
+        filter: opacity(0);
+    }
 }
 
-div > .website_image_hover {
-  animation-name: offHoverIcon;
-  animation-duration: .45s;
-  visibility: hidden;
-  opacity: 0;
-  transition: all .45s ease-out;
-  z-index: 0;
-  position: absolute;
+div>.website_image_hover {
+    animation-name: offHoverIcon;
+    animation-duration: .45s;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .45s ease-out;
+    z-index: 0;
+    position: absolute;
 }
 
-div:hover > .website_image_hover {
-  animation-name: onHoverIcon;
-  animation-fill-mode: forwards;
-  animation-duration: .45s;
-  visibility: visible;
-  opacity: 1;
-  transition: all .45s ease-in;
-  z-index: 1;
+div:hover>.website_image_hover {
+    animation-name: onHoverIcon;
+    animation-fill-mode: forwards;
+    animation-duration: .45s;
+    visibility: visible;
+    opacity: 1;
+    transition: all .45s ease-in;
+    z-index: 1;
 }
 
 @keyframes offHoverImage {
-  0% {
-    filter: opacity(.3);
-  }
-  100% {
-    filter: opacity(1.0);
-  }
+    0% {
+        filter: opacity(.3);
+    }
+
+    100% {
+        filter: opacity(1.0);
+    }
 }
 
 @keyframes onHoverImage {
-  0% {
-    filter: opacity(1.0);
-  }
-  100% {
-    filter: opacity(.3);
-  }
+    0% {
+        filter: opacity(1.0);
+    }
+
+    100% {
+        filter: opacity(.3);
+    }
 }
 
-div > .website_image {
-  animation-name: offHoverImage;
-  animation-duration: .45s;
+div>.website_image {
+    animation-name: offHoverImage;
+    animation-duration: .45s;
 }
 
-div:hover > .website_image {
-  animation-fill-mode: forwards;
-  animation-name: onHoverImage;
-  animation-duration: .45s;
+div:hover>.website_image {
+    animation-fill-mode: forwards;
+    animation-name: onHoverImage;
+    animation-duration: .45s;
+}
+
+@keyframes offHoverEnlarge {
+    0% {
+        transform: scale(1.4);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes onHoverEnlarge {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+a>.website_icon_hover {
+    animation-name: offHoverEnlarge;
+    animation-duration: .45s;
+}
+
+a:hover>.website_icon_hover {
+    animation-name: onHoverEnlarge;
+    animation-duration: .45s;
+    animation-fill-mode: forwards;
 }

@@ -1,6 +1,6 @@
 import { AiFillGithub, AiOutlineLink, AiOutlineExport } from "react-icons/ai";
 import { IconContext } from "react-icons";
-import React from "react";
+import React, {useState} from "react";
 import TextEditor from "./TextEditor";
 import projectData from "../data/projects.json";
 import {
@@ -27,6 +27,7 @@ function Projects() {
 
 export function ProjectPage(props) {
     const data = projectData[props.title];
+    // const [projectLinkSize, setProjectLinkSize] = useState("1")
 
     const list = (data.description).map((item, i) => {
         return <ProjectList key={i}>{TextEditor(item)}</ProjectList>
@@ -40,10 +41,10 @@ export function ProjectPage(props) {
                     <ProjectListContainer>{list}</ProjectListContainer>
                     <ProjectIcons>
                         <ProjectLink to={data.github} target="_blank" style={{textDecoration: 'none', color: "white"}}>
-                            <IconContext.Provider value={{ size: "2em" }}><AiFillGithub /></IconContext.Provider>
+                            <IconContext.Provider value={{ size: "2.5em" }}><AiFillGithub className="website_icon_hover"/></IconContext.Provider>
                         </ProjectLink>
                         <ProjectLink to={data.link} target="_blank" style={{textDecoration: 'none', color: "white"}}>
-                            <IconContext.Provider value={{ size: "2em" }}><AiOutlineLink /></IconContext.Provider>
+                            <IconContext.Provider value={ {size: "2.5em"} }><AiOutlineLink className="website_icon_hover"/></IconContext.Provider>
                         </ProjectLink>
                     </ProjectIcons>                        
                 </ProjectText>
