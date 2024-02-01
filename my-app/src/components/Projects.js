@@ -1,6 +1,6 @@
 import { AiFillGithub, AiOutlineLink, AiOutlineExport } from "react-icons/ai";
 import { IconContext } from "react-icons";
-import React, {useState} from "react";
+import React from "react";
 import TextEditor from "./TextEditor";
 import projectData from "../data/projects.json";
 import {

@@ -15,9 +15,7 @@ body {
 @keyframes onHoverIcon {
     0% {
         filter: opacity(0);
-
     }
-
     100% {
         filter: opacity(1);
     }

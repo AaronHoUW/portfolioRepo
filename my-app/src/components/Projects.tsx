@@ -17,8 +17,9 @@ export const ProjectInfo = styled.div`
     flex-direction-column;
     display: flex;
     overflow: hidden;
-    background-color: #262227;
     height: 525px;
+    background-color: #262227;
+    border-radius: 10px;
 `;
 
 export const ProjectText = styled.div`
@@ -55,12 +56,12 @@ export const ProjectListContainer = styled.ul`
 `
 
 export const ProjectIcons = styled.div`
-    // margin: 0.5rem 0 0 0.5rem;
     position: absolute;
     bottom: 2rem;
 `
 
 export const ProjectImage = styled.div`
+    background-color: #262227;
     display: flex;
     justify-content: center;
     align-items: center;
