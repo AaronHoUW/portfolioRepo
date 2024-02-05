@@ -1,0 +1,11 @@
+{
+    "Teaching Assistant": {
+        "DateStart": "January 2023",
+        "DateFinish": "August 2023",
+        "Location": "Seattle",
+        "DisplayImage": "./img/uwiSchool.png",
+        "Text": ["Designed and </u>developed</p> an interactive web application using </u>JavaScript</p> and </u>React</p> to educate kids about marine life.",
+            ["a", "b", "c"],
+            "Overhauled the project scripts in </u>refactoring</p> code's structure and </u>debugging</p> problems."]
+    }
+}

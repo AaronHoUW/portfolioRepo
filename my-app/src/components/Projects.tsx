@@ -14,7 +14,6 @@ export const ProjectContainer = styled.div`
 
 export const ProjectInfo = styled.div`
     justify-content: space-between;
-    flex-direction-column;
     display: flex;
     overflow: hidden;
     height: 525px;
