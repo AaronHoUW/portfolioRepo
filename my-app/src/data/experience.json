@@ -1,11 +1,34 @@
 {
     "Teaching Assistant": {
-        "DateStart": "January 2023",
-        "DateFinish": "August 2023",
-        "Location": "Seattle",
-        "DisplayImage": "./img/uwiSchool.png",
-        "Text": ["Designed and </u>developed</p> an interactive web application using </u>JavaScript</p> and </u>React</p> to educate kids about marine life.",
-            ["a", "b", "c"],
-            "Overhauled the project scripts in </u>refactoring</p> code's structure and </u>debugging</p> problems."]
+        "dateStart": "January 2023",
+        "dateEnd": "August 2023",
+        "location": "Seattle",
+        "displayImage": "./img/uwiSchool.png",
+        "company": "Unviersity of Washington iSchool",
+        "text": ["During my time as a student, I instructed three different courses over the course of three quarters. These courses can be found as followed:",
+            "</b>Cooperative Software Development</p> - Summer 2023",
+            ["</u>Instructed</p> cooperative user-centered software development practices, emphasizing </u>agile methodologies </p>and </u>GitHub usage",
+                "</u>Taught </p>weekly lab sessions with 35 students on </u>JavaScript/React,</p> </u>Unit Testing,</p> and </u>collaborative work practices</p> derived from course materials",
+                "Supported the professor by developing lectures, facilitating weekly stakeholder meetings, and encouraging student engagement in group activities"],
+            "</b>Exploring Informatics</p> - Spring 2023",
+                ["</u>Led </p>two weekly lab sessions with 30 students on </u>Data Collection</p>, </u>Data Bias</p>, Privacy, Design, and </u>AI</p>",
+                "Collaborated with the professor to teach non-informatics majors about Informatics from ethical and legal standpoints",
+                "Managed administrative responsibilities, including organizing lecture notes and assisting in course structure"],
+            "</b>Open Science Data</p> - Winter 2023",
+                ["Collaborated with the professor to deliver lectures and lead discussions on </u>data-driven science</p> and </u>technology</p> topics while developing course materials and aligning content with learning resources",
+                "Hosted consistent office hours to assist students with coursework inquiries",
+                "Managed administrative responsibilities, including communicating with the professor regarding student performance and attendance records"]
+        ]
+    },
+    "Coding Instructor": {
+        "dateStart": "January 2024",
+        "dateEnd": "Present",
+        "location": "Seattle",
+        "displayImage": "./img/CWK.png",
+        "company": "Coding With Kids",
+        "text": ["Currently working part time in instructing weekly basic coding courses to kids in part of an after school program. Some of my tasks are:",
+            ["Developed student's foundation and understanding of programming using block coding",
+                "Planned and organized weekly lesson plans in introducing new coding concepts"]
+        ]
     }
 }

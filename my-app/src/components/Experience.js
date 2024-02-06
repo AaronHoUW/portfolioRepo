@@ -1,36 +1,51 @@
 import React from "react";
+import experienceData from "../data/experience.json";
+import TextEditor from "./TextEditor";
 import {
     Container,
     Info,
     CompanyImage,
     Header,
     TextContainer,
-    Date,
+    ExperienceInfo,
     BulletPoint,
     ListContainer,
     Text
 } from "./Experience.tsx"
 
 function Experience() {
+    const experienceList = Object.keys(experienceData).reverse().map((experience, i) => <ExperiencePage title={experience} key={i}/>)
     return (
         <>
-            <Container>
-                <Info>
-                    <CompanyImage src="./img/uwiSchool.png" alt="Unviersity of Washington iSchool Logo"/>
-                    <TextContainer>
-                        <Header>Experience One</Header>
-                        <Date>Seattle, January 2023 - August 2023</Date>
-                        <Text>Simple Placeholder text about the company</Text>
-                        <ListContainer>
-                            <BulletPoint>a</BulletPoint>
-                            <BulletPoint>b</BulletPoint>
-                            <BulletPoint>c</BulletPoint>
-                        </ListContainer>
-                        <Text>Simple Placeholder text about the company</Text>
-                    </TextContainer>
-                </Info>
-            </Container>
+            {experienceList}
         </>
+    )
+}
+
+export function ExperiencePage(props) {
+    const data = experienceData[props.title];
+
+    const textFormat = (data.text).map((text, i) => {
+        if (Array.isArray(text)) {
+            const bulletPoints = text.map((bullet, i) => {
+                return <BulletPoint key={i}>{TextEditor(bullet)}</BulletPoint>
+            })
+            return <ListContainer key={i}>{bulletPoints}</ListContainer>
+        }
+        return <Text key={i}>{TextEditor(text)}</Text>;
+    })
+
+    return (
+        <Container>
+            <Info>
+                <CompanyImage src={data.displayImage} alt={data.company + "'s Logo"}/>
+                <TextContainer>
+                    <Header>{props.title}</Header>
+                    <ExperienceInfo>{data.company} · {data.location}, {data.dateStart} - {data.dateEnd}</ExperienceInfo>
+                    {textFormat}
+                </TextContainer>
+            </Info>
+        </Container>
     )
 }
 

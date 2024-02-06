@@ -8,7 +8,7 @@ export const Container = styled.div`
     margin: 25px auto 25px;
     padding: 10px;
     position: relative;
-    max-height: 525px
+    // max-height: 525px
 `;
 
 export const Info = styled.div`
@@ -39,10 +39,9 @@ export const Header = styled.h2`
     margin-block: 0 0.5rem;
 `
 
-export const Date = styled.p`
+export const ExperienceInfo = styled.p`
     font-size: 18px;
-    margin-block-start: 0;
-    // color: #EAEAEA;
+    margin-block: 0;
     color: rgb(169, 169, 169);;
 `
 
@@ -56,5 +55,5 @@ export const ListContainer = styled.ul`
 `
 
 export const Text = styled.p`
-    margin-block: 0;
+    margin-block-end: 0;
 `
