@@ -1,6 +1,7 @@
 import React from "react";
 import experienceData from "../data/experience.json";
 import TextEditor from "./TextEditor";
+import TitleBreak from "./TitleBreak.js";
 import {
     Container,
     Info,
@@ -17,6 +18,7 @@ function Experience() {
     const experienceList = Object.keys(experienceData).reverse().map((experience, i) => <ExperiencePage title={experience} key={i}/>)
     return (
         <>
+            <TitleBreak title="Experience"/>
             {experienceList}
         </>
     )

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const BannerContainer = styled.div`
     margin-top: 114px;
     max-height: 400px;
+    margin-bottom: 25px;
 `;
 
 export const BannerImage = styled.img`

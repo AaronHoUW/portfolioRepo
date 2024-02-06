@@ -3,6 +3,7 @@ import { IconContext } from "react-icons";
 import React from "react";
 import TextEditor from "./TextEditor";
 import projectData from "../data/projects.json";
+import TitleBreak from "./TitleBreak.js";
 import {
     ProjectContainer,
     ProjectInfo,
@@ -20,6 +21,7 @@ function Projects() {
     const projectList = Object.keys(projectData).map((website, i) => <ProjectPage title={website} key={i}/>)
     return(
         <>
+            <TitleBreak title={"Projects"}/>
             {projectList}
         </>
     )
