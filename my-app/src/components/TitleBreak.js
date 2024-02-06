@@ -7,7 +7,7 @@ import {
 
 function TitleBreak(props) {
     return (
-        <Container>
+        <Container id={props.title} className="titlebreak">
             <Line />
             <Text>{(props.title) || "Place Holder"}</Text>
             <Line />

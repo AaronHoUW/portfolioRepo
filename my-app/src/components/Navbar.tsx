@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 export const NavBarContainer = styled.div`
     z-index: 1;
@@ -24,7 +24,7 @@ export const NavBarHeader = styled.h1`
     margin-left: 2rem;
 `;
 
-export const Links = styled(Link)`
+export const HashLinks = styled(HashLink)`
     text-decoration: none;
     font-size: 24px;
     font-style: normal;

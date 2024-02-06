@@ -1,19 +1,18 @@
 import React from "react";
-import { Link, NavLink } from 'react-router-dom';
 import {
     NavBarContainer,
-    Links,
+    HashLinks,
     NavBarHeader
 } from './Navbar.tsx'
 
 function Navbar() {
     return (
         <NavBarContainer>
-            <Links to="/"><NavBarHeader>Aaron Ho</NavBarHeader></Links>
+            <HashLinks to="#top"><NavBarHeader>Aaron Ho</NavBarHeader></HashLinks>
             <div style={{'paddingTop': '10px'}}>
-                <Links to="/">Home</Links>
-                <Links to="/work">Work</Links>
-                <Links to="/about">About</Links>
+                <HashLinks to="/#top" smooth>Home</HashLinks>
+                <HashLinks to="/#Projects" smooth>Projects</HashLinks>
+                <HashLinks to="/#Experience" smooth>Experience</HashLinks>
             </div>
         </NavBarContainer>
     )
