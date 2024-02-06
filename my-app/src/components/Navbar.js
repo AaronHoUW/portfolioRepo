@@ -8,9 +8,8 @@ import {
 function Navbar() {
     return (
         <NavBarContainer>
-            <HashLinks to="#top"><NavBarHeader>Aaron Ho</NavBarHeader></HashLinks>
+            <NavBarHeader>Aaron Ho</NavBarHeader>
             <div style={{'paddingTop': '10px'}}>
-                <HashLinks to="/#top" smooth>Home</HashLinks>
                 <HashLinks to="/#Projects" smooth>Projects</HashLinks>
                 <HashLinks to="/#Experience" smooth>Experience</HashLinks>
             </div>

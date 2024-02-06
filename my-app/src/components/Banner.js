@@ -6,7 +6,7 @@ import {
 
 function Banner() {
     return (
-        <BannerContainer id="top">
+        <BannerContainer >
             <BannerImage src="/img/Sunset-in-Seattle-1.jpg"/>
         </BannerContainer>
     ) 
