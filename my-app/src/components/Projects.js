@@ -14,7 +14,7 @@ import {
     ProjectList,
     ProjectListContainer,
     ProjectIcons,
-    ProjectImage
+    ProjectImage,
 } from './Projects.tsx'
 
 function Projects() {
