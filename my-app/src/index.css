@@ -10,6 +10,62 @@ body {
     overflow: auto;
 }
 
+/* Navbar */
+
+@keyframes onClickDropDown {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes offClickDropDown {
+    0% {
+        transform: rotate(-180deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.navbar_dropdown_true {
+    animation-name: onClickDropDown;
+    animation-duration: .45s;
+    animation-fill-mode: forwards;
+}
+
+.navbar_dropdown_false {
+    animation-name: offClickDropDown;
+    animation-duration: .45s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes onClickMenuOpen {
+    0% {
+        /* opacity: 0; */
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.navbar_menu_true {
+    display: block;
+    animation: onClickMenuOpen;
+    animation-duration: .45s;
+    animation-fill-mode: forwards;
+}
+
+.navbar_menu_false, .navbar_menu_undefined {
+    display: none;
+}
+
 /* Projects Cards */
 
 @keyframes onHoverIcon {
