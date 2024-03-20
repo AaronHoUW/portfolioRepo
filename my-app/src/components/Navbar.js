@@ -20,7 +20,7 @@ function Navbar() {
     }
 
     return (
-        <NavBarContainer>
+        <NavBarContainer className={"navbar_container_" + isClicked}>
             <NavBarItems>
                 <NavBarHeader>Aaron Ho</NavBarHeader>
                 <HashLinksContainer>

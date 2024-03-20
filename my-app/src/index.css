@@ -66,6 +66,40 @@ body {
     display: none;
 }
 
+@keyframes onNavBarDrop {
+    0% {
+        height: 48px;
+    }
+
+    100% {
+        height: 220px;
+    }
+}
+
+@keyframes offNavBarDrop {
+    0% {
+        height: 220px;
+    }
+
+    100% {
+        height: 48px;
+    }
+}
+
+.navbar_container_true {
+    height: 220px;
+    animation: onNavBarDrop;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+.navbar_container_false {
+    height: 48px;
+    animation: offNavBarDrop;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
 /* Projects Cards */
 
 @keyframes onHoverIcon {

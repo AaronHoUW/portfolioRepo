@@ -14,6 +14,7 @@ export const NavBarContainer = styled.div`
     overflow: hidden;
     position: fixed;
     flex-direction: column;
+    max-height: 270px
 `;
 
 export const NavBarItems = styled.div`
@@ -47,6 +48,13 @@ export const HashLinks = styled(HashLink)`
     line-height: normal;
     color: black;
     margin-right: 2rem;
+
+    display: block;
+    width: 100%;
+
+    @media${device.tablet}{
+        display: unset;
+    }
 `;
 
 export const DropDownMenu = styled.a`
