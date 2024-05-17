@@ -4,7 +4,7 @@
         "dateEnd": "August 2023",
         "location": "Seattle",
         "displayImage": "./img/uwiSchool.png",
-        "company": "Unviersity of Washington iSchool",
+        "company": "University of Washington iSchool",
         "text": ["During my time as a student, I instructed three different courses over the course of three quarters. These courses can be found as followed:",
             "</b>Cooperative Software Development</p> - Summer 2023",
             ["</u>Instructed</p> cooperative user-centered software development practices, emphasizing </u>agile methodologies </p>and </u>GitHub usage",
@@ -26,9 +26,10 @@
         "location": "Seattle",
         "displayImage": "./img/CWK.png",
         "company": "Coding With Kids",
-        "text": ["Currently working part time in instructing weekly basic coding courses to kids in part of an after school program. Some of my tasks are:",
-            ["Developed student's foundation and understanding of programming using block coding",
-                "Planned and organized weekly lesson plans in introducing new coding concepts"]
+        "text": ["Currently working as an instructor teaching coding concepts to students. This entails:",
+            ["Facilitate collaborative learning environments to introduce students of diverse backgrounds to fundamental coding principles.",
+                "Lead weekly coding sessions for a cohort of 15 students, emphasizing strong coding fundamentals and problem-solving skills",
+                "Collaborate closely with other instructors to develop and implement effective lesson plans tailored to meet the needs of individual students to ensure consistent learning outcomes."]
         ]
     }
 }
