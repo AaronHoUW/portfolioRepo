@@ -3,7 +3,7 @@ import { HashLink } from 'react-router-hash-link';
 import { device } from "./device";
 
 export const NavBarContainer = styled.div`
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 100%;
@@ -40,6 +40,7 @@ export const HashLinksContainer = styled.div`
     }
 `
 
+// @ts-ignore
 export const HashLinks = styled(HashLink)`
     text-decoration: none;
     font-size: 24px;
@@ -48,7 +49,6 @@ export const HashLinks = styled(HashLink)`
     line-height: normal;
     color: black;
     margin-right: 2rem;
-
     display: block;
     width: 100%;
 
