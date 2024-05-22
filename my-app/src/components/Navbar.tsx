@@ -14,7 +14,7 @@ export const NavBarContainer = styled.div`
     overflow: hidden;
     position: fixed;
     flex-direction: column;
-    max-height: 270px
+    max-height: 7.5rem;
 `;
 
 export const NavBarItems = styled.div`

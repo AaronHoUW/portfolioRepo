@@ -5,7 +5,7 @@ html {
 
 body {
     margin: 0;
-    font-family: 'helvetica', serif;
+    font-family: 'open sans', 'lato', 'roboto';
     height: 100%;
     overflow: auto;
 }

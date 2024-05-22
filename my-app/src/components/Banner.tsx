@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { device } from "./device";
 
 export const BannerContainer = styled.div`
-    margin-top: 114px;
+    margin-top: 7.5rem;
     max-height: 400px;
     margin-bottom: 25px;
     position: relative;
