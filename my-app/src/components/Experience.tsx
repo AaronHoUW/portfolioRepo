@@ -70,7 +70,7 @@ export const TextContainer = styled.div`
 `
 
 export const Header = styled.h2`
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
     margin-block: 0 0.5rem;
 `

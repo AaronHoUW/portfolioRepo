@@ -61,7 +61,7 @@ export const ProjectText = styled.div`
 `
 
 export const ProjectHeader = styled.h2`
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
     margin-block-end: 0.5em;
 `
