@@ -43,7 +43,7 @@ export function ExperiencePage(props) {
                 <CompanyImage src={data.displayImage} alt={data.company + "'s Logo"}/>
                 <TextContainer>
                     <Header>{props.title}</Header>
-                    <ExperienceInfo>{data.company} · {data.location}, {data.dateStart} - {data.dateEnd}</ExperienceInfo>
+                    <ExperienceInfo> {data.company} · {data.location} · {data.dateStart} - {data.dateEnd}</ExperienceInfo>
                     {textFormat}
                 </TextContainer>
             </Info>

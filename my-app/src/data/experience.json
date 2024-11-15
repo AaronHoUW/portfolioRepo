@@ -2,7 +2,7 @@
     "Teaching Assistant": {
         "dateStart": "January 2023",
         "dateEnd": "August 2023",
-        "location": "Seattle",
+        "location": "Seattle, Washington",
         "displayImage": "./img/uwiSchool.png",
         "company": "University of Washington iSchool",
         "text": ["During my time as a student, I instructed three different courses over the course of three quarters. These courses can be found as followed:",
@@ -23,13 +23,25 @@
     "Coding Instructor": {
         "dateStart": "January 2024",
         "dateEnd": "Present",
-        "location": "Seattle",
+        "location": "Seattle, Washington",
         "displayImage": "./img/CWK.png",
         "company": "Coding With Kids",
         "text": ["Currently working as an instructor teaching coding concepts to students. This entails:",
-            ["Facilitate collaborative learning environments to introduce students of diverse backgrounds to fundamental coding principles.",
-                "Lead weekly coding sessions for a cohort of 15 students, emphasizing strong coding fundamentals and problem-solving skills",
+            ["Lead weekly coding sessions for a cohort of 15 students, emphasizing the development of strong coding fundamentals and problem-solving skills.",
+                "Facilitate collaborative learning environments to introduce students of diverse backgrounds to fundamental coding principles",
                 "Collaborate closely with other instructors to develop and implement effective lesson plans tailored to meet the needs of individual students to ensure consistent learning outcomes."]
+        ]
+    },
+    "Paraeducator": {
+        "dateStart": "September 2024",
+        "dateEnd": "Present",
+        "location": "Renton, Washington",
+        "displayImage": "./img/CWK.png",
+        "company": "Renton School District",
+        "text": ["Provided assistent within schools across the Renton School District. This entais:",
+            ["Quickly respond to help desk calls and emails to ensure limited disturbance to the student learning environment.",
+                "Troubleshoot and resolve technical issues submitted by teachers and school administrators throughout various classrooms.",
+                "Provide main office assistant with projects and in-classroom support to teachers with student management as needed"]
         ]
     }
 }
